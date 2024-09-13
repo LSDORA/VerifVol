@@ -9,15 +9,15 @@ import java.util.Map;
 
 public abstract class SearchRepository implements SearchRepositoryInterface {
 
-    private Map<Integer, Vol> vols;
-    private Map<Integer, ArrayList<Billet>> billetsParVol;
+    protected Map<Integer, Vol> vols;
+    protected Map<Integer, ArrayList<Billet>> billetsParVol;
 
     public SearchRepository() {
+        // Initialisation des collections
         vols = new HashMap<>();
         billetsParVol = new HashMap<>();
         loadData();
     }
-
 
     protected abstract void loadData();
 

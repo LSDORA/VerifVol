@@ -15,7 +15,6 @@ public class SearchController {
     public String find(String referenceBillet) {
         Billet billet = service.rechercher(referenceBillet);
 
-
         if (billet != null) {
             int idVol = billet.getIdVol();
 
@@ -28,7 +27,7 @@ public class SearchController {
                 return "Vol non trouvé pour l'ID : " + idVol;
             }
         } else {
-            return "Billet non trouvé pour la référence : " + referenceBillet;
+            return "Vol non trouvé pour la référence : " + referenceBillet;
         }
     }
 }

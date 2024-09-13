@@ -8,7 +8,6 @@ import java.util.ArrayList;
 public interface SearchRepositoryInterface {
     ArrayList<Vol> getVol();
     ArrayList<Billet> getBillets();
-    Vol rechercherVol(String text);
     Billet rechercher(String referenceBillet);
     Vol getVolById(int idVol);
 }

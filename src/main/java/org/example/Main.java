@@ -12,17 +12,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        SearchRepositoryInterface volRepository = new VolRepository() {
-            @Override
-            public Vol rechercherVol(String text) {
-                return null;
-            }
+        SearchRepositoryInterface volRepository = new VolRepository();
 
-            @Override
-            protected void loadData() {
-
-            }
-        };
 
 
         ArrayList<SearchRepositoryInterface> repositories = new ArrayList<>();
